@@ -1,0 +1,191 @@
+.food {
+ 
+    width: 100%;
+      text-align: center;
+      padding-top:100px ;
+      background-color: rgba(0,0, 0, .1);
+      overflow: hidden;
+      height: 100%;
+  } 
+  .video video{
+  
+    position: absolute;
+    filter: brightness(30%);
+      top: 0;
+      left: 0;
+      z-index: -1;
+     width:100%;
+     height: 110%;
+     padding-bottom: 100;
+     object-fit: cover;
+    
+  }
+  
+  
+  
+  .food h2 {
+      margin: 1rem 0;
+      color: #f8f8f8;
+  }
+  
+  .food .container {
+      max-width: 1140px;
+      margin: auto;
+      
+  }
+  
+  .food .container > p {
+      margin: 1rem 0 3rem 0;
+      font-size: 1.2rem;
+      color: #f8f8f8;
+  }
+  
+   .food .card-container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: -100px;
+     margin-left: -380px;
+      column-gap: 1rem;
+      row-gap: 1rem;
+     
+  }
+  
+   .food .card {
+     align-items: center;
+     margin-top: 150px;
+    
+      flex-direction: column;
+      justify-content: space-between;
+      height: 390px;
+      width: 450px;
+      padding: 3rem 2rem ;
+      border: 1px solid #e7e8ea;
+      text-align: left;
+      border-radius: 24px;
+      opacity:10;
+      
+      background-color: rgba(0,0, 0, .1);
+  }
+  .food .card:hover {
+      transform: scale(1.05);
+      transition: 0.4s ease-in-out;
+  }
+  
+  
+  .food .card h3 {
+      margin: 1rem 0;
+      color: #f8f8f8;
+  }
+  
+  .food .card p {
+      font-size: 20px;
+      color: #ccc;
+  }
+  
+  .food .icon-container {
+      background-color: var(--primary-blue);
+      border-radius: 50px;
+      display: inline-flex;
+      padding: 1rem;
+  }
+  .linker {
+  
+      border:white;
+    font-family: 'Lato';
+    font-size: 30;
+    color: black;
+    background:local;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .linker:before {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      line-height: 3;
+      font-size: 140%;
+      width: 60px;
+    }
+  .linker:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .linker:hover {
+      background: grey;
+    }
+  
+  
+  
+  
+  
+  /* Icons */
+  
+  .icon-cart:before {
+    content: "\f07a";
+  }
+  
+  .icon-heart:before {
+    content: "\f55a";
+  }
+  
+  .icon-info:before {
+    content: "\f05a";
+  }
+  
+  .icon-send:before {
+    content: "\f1d8";
+  }
+  
+  
+  
+  .food .icon {
+      font-size: 4rem;
+      color: white;
+  }
+  
+  .food .btn {
+      display: inline-block;
+      margin-top: 1rem;
+  }
+  
+  @media screen and (max-width:940px) {
+      .food .card-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      
+  }
+  @media screen and (max-width:600px) {
+      .food .card-container {
+          grid-template-columns: 1fr;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
